@@ -24,6 +24,10 @@ Rails.application.configure do
   # Store uploaded files on Bucketeer S3.
   config.active_storage.service = :bucketeer
 
+  # Proxy Active Storage files through the app instead of redirecting to S3.
+  # This fixes PDF preview issues in iframes and CORS problems.
+  config.active_storage.resolve_model_to_route = :rails_storage_proxy
+
   # Assume all access to the app is happening through a SSL-terminating reverse proxy.
   # config.assume_ssl = true
 
