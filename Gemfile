@@ -11,6 +11,7 @@ gem "tailwindcss-rails"
 gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "bootsnap", require: false
+gem "image_processing", "~> 1.2"
 gem "kamal", require: false
 gem "thruster", require: false
 gem "solid_cache"
